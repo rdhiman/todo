@@ -1,0 +1,118 @@
+.mat-checkbox-background {
+  background-color: black !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent {
+  .mat-checkbox-background {
+    background-color: black !important;
+  }
+}
+
+::ng-deep .mat-checkbox.mat-accent {
+  .mat-checkbox-frame {
+    border: 1px solid #000000 !important;
+  }
+
+  .mat-checkbox-layout {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .mat-checkbox-inner-container {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+::ng-deep .mat-simple-snackbar {
+  span {
+    color: red;
+  }
+}
+
+header {
+  height: 56px;
+  left: 0px;
+  top: 0px;
+
+  background: #383E54;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  h2 {
+    position: absolute;
+    width: 77px;
+    height: 21px;
+    left: 22px;
+    top: 18px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+  }
+}
+
+.todo-list {
+  margin-top: 17px;
+  width: 90%;
+
+  @media (min-width: 576px) { 
+    width: 543px;
+  }
+
+  .todo {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-top: 9px;
+    height: 38px;
+
+    &.overdue {
+      background: rgba(255, 0, 0, 0.2);
+    }
+
+    &.current {
+      background: rgba(196, 196, 196, 0.2);
+    }
+
+    &.complete {
+      background: rgba(0, 255, 0, 0.2);
+    }
+
+    .description {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .date {
+      padding: 4px 6px 3px 9px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+    }
+  }
+
+  .skeleton-loader {
+    margin: 5px 0;
+    background-color: #dddddd;
+    height: 38px;
+    animation: loadingPulse 0.85s infinite alternate;
+  }
+}
+
+@keyframes loadingPulse {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

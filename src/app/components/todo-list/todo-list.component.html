@@ -1,0 +1,27 @@
+<header>
+  <h2>Todo App</h2>
+</header>
+<div *ngIf="renderComponent" class="d-flex justify-content-center">
+  <div class="todo-list">
+    <div *ngIf="todosOverdue">
+      <app-todo-detail (todoUpdated)="todoUpdated($event)" [todos]="todosOverdue"></app-todo-detail>
+    </div>
+    <div *ngIf="todosCurrent">
+      <app-todo-detail (todoUpdated)="todoUpdated($event)" [todos]="todosCurrent"></app-todo-detail>
+    </div>
+    <div *ngIf="todosComplete">
+      <app-todo-detail (todoUpdated)="todoUpdated($event)" [todos]="todosComplete"></app-todo-detail>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!renderComponent"  class="d-flex justify-content-center">
+  <div class="todo-list">
+    <div class="skeleton-loader"></div>
+    <div class="skeleton-loader"></div>
+    <div class="skeleton-loader"></div>
+    <div class="skeleton-loader"></div>
+    <div class="skeleton-loader"></div>
+    <div class="skeleton-loader"></div>
+  </div>
+</div>

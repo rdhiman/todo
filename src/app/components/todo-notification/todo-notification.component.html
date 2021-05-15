@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-between">
+  <div>
+    <p *ngIf="data.isComplete">
+      <span [innerHtml]="'Great job on completing '"></span><span class="description" [innerHtml]="data.description + '.'"></span>
+    </p>
+    <p *ngIf="!data.isComplete">
+      <span class="description" [innerHtml]="data.description"></span><span [innerHtml]="' has been added to the uncompleted list.'"></span>
+    </p>  
+  </div>
+  <div>
+    <mat-icon (click)="snackBarRef.dismiss()">close</mat-icon>
+  </div>
+</div>

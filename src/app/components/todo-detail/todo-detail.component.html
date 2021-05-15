@@ -1,0 +1,13 @@
+<div
+  class="todo d-flex justify-content-between"
+  *ngFor="let todo of todos"
+  [ngClass]="{ 'complete': todo.isComplete, 'overdue': isTodoOverdue(todo) && !todo.isComplete, 'current': !isTodoOverdue(todo) && !todo.isComplete }">
+  <div class="d-flex">
+      <span (click)="updateTodo(todo)" class="align-self-center mr-2">
+      <mat-checkbox class="align-self-center" [checked]="todo.isComplete"></mat-checkbox>
+      </span>
+      <span *ngIf="!todo.isComplete" class="description align-self-center">{{todo.description}}</span>
+      <s *ngIf="todo.isComplete" class="description align-self-center">{{todo.description}}</s>
+  </div>
+  <span class="date" *ngIf="todo.dueDate">{{todo.dueDate | formatDate : 'MM/DD/YYYY'}}</span>
+</div>
