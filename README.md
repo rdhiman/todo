@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Please use node v12.14.1 (npm v6.13.4)
 
 ## Development server
-1. Clone the repo
+1. Using terminal, clone the repo into your desired folder using the command `git clone https://github.com/rdhiman/todo.git`.
 2. Using terminal, cd into the project folder and run `npm install`.
 3. Install Angular cli globally using the command `npm install -g @angular/cli`.
 4. Make sure you are using node v12.14.1
