@@ -2,12 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
-Please use node v14.17.0 (npm v6.14.13)
+Please use node v12.14.1 (npm v6.13.4)
 
 ## Development server
 1. Clone the repo
 2. Using terminal, cd into the project folder and run `npm install`.
-3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Install Angular cli globally using the command `npm install -g @angular/cli`.
+4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
