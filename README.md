@@ -8,7 +8,8 @@ Please use node v12.14.1 (npm v6.13.4)
 1. Clone the repo
 2. Using terminal, cd into the project folder and run `npm install`.
 3. Install Angular cli globally using the command `npm install -g @angular/cli`.
-4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4. Make sure you are using node v12.14.1
+5. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
